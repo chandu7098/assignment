@@ -1,0 +1,21 @@
+<div class="col-md-6" style="text-align: center;">
+    <h2 class="text-center">Update Book</h2>
+    <form>
+      <div class="form-group">
+        <label for="title">Title:</label>
+        <input [(ngModel)]="book.title" placeholder="title" name="title" class="form-control" id="title">
+      </div>
+    
+      <div class="form-group">
+        <label for="price">Price:</label>
+        <input [(ngModel)]="book.price" placeholder="price" name="price" class="form-control" id="price">
+      </div>
+    
+      <div class="form-group">
+        <label for="numberOfPages">Number Of Pages</label>
+        <input [(ngModel)]="book.numberOfPages" placeholder="numberOfPages" name="numberOfPages" class="form-control" id="numberOfPages">
+      </div>
+  
+      <button class="btn btn-success" (click)="editBook()">Update</button>
+    </form>
+    </div>

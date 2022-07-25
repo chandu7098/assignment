@@ -1,0 +1,51 @@
+<div class="col-md-6" style="text-align: center;">
+  <h2 class="text-center">Add Author</h2>
+  <form>
+    <div class="form-group">
+      <label for="firstNAme">firstName:</label>
+      <input [(ngModel)]="author.firstName" placeholder="FirstName" name="firstName" class="form-control" id="firstName">
+    </div>
+  
+    <div class="form-group">
+      <label for="lastName">LastName:</label>
+      <input [(ngModel)]="author.lastName" placeholder="LastName" name="lastName" class="form-control" id="lastName">
+    </div>
+  
+    <div class="form-group">
+      <label for="email">Email Id</label>
+      <input [(ngModel)]="author.email" placeholder="Email Id" name="EmailId" class="form-control" id="emailId">
+    </div>
+
+    <div class="form-group">
+      <label for="phoneNumber">phoneNumber</label>
+      <input [(ngModel)]="author.phoneNumber" placeholder="PhoneNumber" name="phoneNumber" class="form-control" id="phoneNumber">
+    </div>
+
+    <div class="form-group">
+      <label for="address1">address1</label>
+      <input [(ngModel)]="author.address1" placeholder="address1" name="address1" class="form-control" id="address1">
+    </div>
+
+    <div class="form-group">
+      <label for="address2">address2</label>
+      <input [(ngModel)]="author.address2" placeholder="address2" name="address2" class="form-control" id="address2">
+    </div>
+
+    <div class="form-group">
+      <label for="city">City</label>
+      <input [(ngModel)]="author.city" placeholder="city" name="city" class="form-control" id="city">
+    </div>
+
+    <div class="form-group">
+      <label for="state">State</label>
+      <input [(ngModel)]="author.state" placeholder="state" name="state" class="form-control" id="state">
+    </div>
+
+    <div class="form-group">
+      <label for="zipcode">zipcode</label>
+      <input [(ngModel)]="author.zipcode" placeholder="zip code" name="zipCode" class="form-control" id="zipCode">
+    </div>
+
+    <button class="btn btn-success" (click)="createAuthor()">Create</button>
+  </form>
+  </div>
